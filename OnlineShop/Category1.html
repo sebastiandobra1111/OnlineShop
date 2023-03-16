@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Ecommerce Website-Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+        <a href="#" class="logo">Ecommerce</a>
+        <i class='bx bx-shopping-bag' id="cart-icon"></i>
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+
+                <div class="cart-box">
+                    <img src="product1.png" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">Ghete nike air zoom</div>
+                        <div class="cart-price">$450</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <i class='bx bxs-trash-alt cart-remove'></i>
+                </div>
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <button type="button" class="btn-buy">Buy Now</button>
+            <i class='bx bx-x'id="close-cart"></i>
+        </div>
+    </div>
+    <ul class="categories">
+        <li><a href="Index.html">HOME</a></li>
+        <li><a href="category1.html">Category 1</a></li>
+        <li><a href="category2.html">Category 2</a></li>
+      </ul>
+    </header>
+
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="product1.png" alt="" class="product-img">
+                <h2 class="product-title">Ghete nike air zoom</h2>
+                <span class="price">$450</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+                <div class="product-box">
+                    <img src="product2.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Ghete Puma Evo</h2>
+                    <span class="price">$370</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                <div class="product-box">
+                    <img src="product3.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Ghete Adidas AdiZero</h2>
+                    <span class="price">$570</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
