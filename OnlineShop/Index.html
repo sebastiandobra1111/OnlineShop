@@ -2,17 +2,72 @@
 <html lang="en">
 <head>
 
+    <script src="main.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Ecommerce Website-Shopping Cart</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="utf-8">
+    <title>Ecommerce Website - Shopping Cart</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <style>
+        /* Add your custom styles here */
+        .search-bar {
+            margin-left: 20px;
+            width: 250px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="nav container">
+        <input type="text" id="search-bar" placeholder="Search for products...">
+
+    <script>
+        $(function() {
+            var products = [
+                "Ghete nike air zoom",
+                "Ghete Puma Evo",
+                "Ghete Adidas AdiZero",
+                "Manusi Reusch",
+                "Manusi Lupos",
+                "Sports Socks",
+                "Sports Jerseys",
+                "Sports Shorts",
+                "Sports Shoes"
+            ];
+
+            $("#search-bar").autocomplete({
+                source: products
+            });
+        });
+    </script>
+        <!-- <div class="user-cards">
+            <div class="card">
+                <div class="header">My name</div></div>
+                <div class="body">email@gmail.com</div>
+        </div> -->
+        <!-- <div class="search-wrapper">
+            <label for="search">Search-Users</label>
+            <input type="search" id="search">
+        </div> -->
+        <!-- <div class="nav container">
         <a href="#" class="logo">Ecommerce</a>
+        <label for="search">Search-Product</label>
+            <input type="search" id="search" data-search>
+            <div class="product-class" data-product-cards-container></div>
+        <template data-product-template>
+            <div class="card">
+            <div class="header" data-header></div></div>
+            <div class="body" data-body></div></template> -->
+            <!-- aaaaa -->
         <i class='bx bx-shopping-bag' id="cart-icon"></i>
         <div class="cart">
             <h2 class="cart-title">Your Cart</h2>

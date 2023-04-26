@@ -123,3 +123,64 @@ function updateTotal(){
 
     
 }
+// // Step 1: Create an array of product names
+// const products = [
+//     'Nike Air Zoom',
+//     'Puma Evo',
+//     'Adidas AdiZero',
+//     'Reusch Gloves',
+//     'Lupos Gloves',
+//     'Sports Socks',
+//     'Sports Jerseys',
+//     'Sports Shorts',
+//     'Sports Shoes',
+//   ];
+  
+//   // Step 2: Get the search bar and search results elements
+//   const searchBar = document.getElementById('search-bar');
+//   const searchResults = document.getElementById('search-results');
+  
+//   // Step 3: Listen for input events on the search bar
+//   searchBar.addEventListener('input', function() {
+//     // Step 4: Loop through the product names array and find matches
+//     const searchTerm = searchBar.value.toLowerCase();
+//     const matches = products.filter(product => product.toLowerCase().includes(searchTerm));
+  
+//     // Step 5: Create HTML elements for each match and append to search results
+//     searchResults.innerHTML = '';
+//     matches.forEach(match => {
+//       const matchElement = document.createElement('div');
+//       matchElement.innerText = match;
+//       matchElement.classList.add('search-result');
+//       searchResults.appendChild(matchElement);
+//     });
+  
+//     // Step 6: Style the search results to look like a dropdown list
+//     searchResults.style.display = matches.length > 0 ? 'block' : 'none';
+//   });
+  
+  
+//aaaaa
+// const productCardTemplate = document.querySelector("[data-product-template]")
+// const productCardContainer = document.querySelector("[data-product-cards-container]")
+// const searchInput = document.querySelector("[data-search]")
+// let products =[]
+// searchInput.addEventListener("input",(e)=> {
+//     const value=e.target.value
+//     console.log(products)
+// }
+// )
+// .then(data => {
+
+//  products = data.map(product => {
+// const productCardTemplate = document.querySelector("[data-product-template]")
+// const card=productCardTemplate.content.cloneNode(true).children[0]
+// const header=card.querySelector("[data-header]")
+// const body=card.querySelector("[data-body]")
+// header.textContent = product.category
+// body.textContent = product.name
+// productCardContainer.append(card)
+// return{category: product.category,name:product.name,element:card}
+// // console.log(product)
+// })
+// })
